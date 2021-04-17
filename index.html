@@ -54,8 +54,10 @@
         <div class="content3">
             <input type="text" v-model="item"> <button class="btn btn-info" @click="addItemNow">Add Item</button>
             <ul>
-                <li v-for="skill in skills">{{ skill }}</li>
+                <li class="m-3" v-for="(skill, index) in skills">{{ skill }} <button class="btn btn-danger btn-sm" @click="removeItem(index)">Remove Item</button></li>
             </ul>
+            <button class="btn btn-warning btn-sm" @click="sortItem">Sort Item</button>
+
         </div>
     </div>
 
@@ -117,6 +119,12 @@
                         this.skills.push(this.item);
                         this.item=null;
                     }
+                },
+                removeItem(index){
+                    this.skills.splice(index, 1);
+                },
+                sortItem(){
+                    this.skills.sort();
                 }
             }
         });
