@@ -1,0 +1,10 @@
+.active{
+    background-color: blue;
+}
+
+.card{
+    background-color: red;
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+}
