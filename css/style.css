@@ -1,8 +1,39 @@
-.active{
+.container {
+    width: 80%;
+    main: auto;
+}
+
+.main-mmenu {
+    background-color: skyblue;
+}
+
+.main-mmenu ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.main-mmenu ul li {
+    display: inline-block;
+}
+
+.main-mmenu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.router-link-active {
+    background-color: red !important;
+}
+
+.active {
     background-color: blue;
 }
 
-.card{
+.card {
     background-color: red;
     color: aliceblue;
     height: 100px;
